@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Core style */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+textarea:focus,
+select:focus {
+    outline: none !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:focus {
+    box-shadow: none !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+/* header section styles */
+.header {
+    background-color: #fff;
+    padding: 34px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .nav-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header .header-logo a {
+    display: inline-block;
+    color: #1b1e20;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.header .header-logo span {
+    display: inline-block;
+    color: #ff545a;
+    text-transform: capitalize;
+}
+
+.header .nav-list .nav-link {
+    color: #859098;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left:42px ;
+}
+.header .nav-list .nav-link.active{
+    color: #ff545a;
+}
