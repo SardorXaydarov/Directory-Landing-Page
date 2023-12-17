@@ -456,7 +456,7 @@ p {
 .explore-cards {
     display: flex;
     margin-top: 78px;
-    gap: 45px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -690,4 +690,62 @@ p {
     color: #767f86;
     width: 12px;
     height: 14px;
+}
+
+
+/* review section styles */
+.review{
+    padding: 117px 0 75px 0;
+}
+.swiper{
+    left: 135px;
+    overflow: visible !important;
+}
+.swiper-wrapper{
+    margin-top: 38px;
+}
+.swiper-slide{
+    width: 342px !important;
+    padding: 50px 30px;
+    border: 1px solid #e1e5eb;
+    border-radius: 3px;
+}
+.swiper-slide:hover{
+    box-shadow: 0 10px 20px rgba(21,19,19,.2);
+}
+.slide-header{
+    display: flex;
+    align-items: center;
+}
+.swiper-slide .slide-img img{
+    width: 50px;
+    height: 50px;
+}
+.swiper-slide .slide-img{
+    margin-right: 20px;
+}
+.slide-header .slide-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.slide-header h2{
+    color: #505866;
+    font-size: 18px;
+}
+.slide-header h3{
+    color: #a2a5ab;
+    font-size: 14px;
+    font-weight: 400;
+}
+.swiper-slide .person-rating i{
+    color: #ffda2b;
+}
+.slide-body{
+    margin-top: 18px;
+}
+.slide-body p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #8d939e;
 }
