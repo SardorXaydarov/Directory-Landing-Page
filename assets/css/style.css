@@ -732,6 +732,7 @@ p {
 .slide-header h2{
     color: #505866;
     font-size: 18px;
+    text-transform: capitalize;
 }
 .slide-header h3{
     color: #a2a5ab;
@@ -748,4 +749,41 @@ p {
     font-size: 14px;
     font-weight: 300;
     color: #8d939e;
+}
+
+/* statistics section styles */
+.statistics{
+    padding: 127px 0 120px 0;
+    background-image: url('../images/counter-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.statistics::before{
+    position: absolute;
+    content: '';
+    background: rgba(75,75,75,.60);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.statistics .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.statistics .statistics-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.statistics .statistics-item{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
