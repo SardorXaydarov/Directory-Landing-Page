@@ -807,6 +807,14 @@ p {
     width: 360px;
     border: 1px solid #dde0e4;
     border-radius: 3px;
+    box-shadow: 0 0px 5px rgba(71,71,71,.2);
+    transition: all .3s ease;
+}
+.blog .blog-item:hover{
+    box-shadow: 0 10px 20px rgba(21,19,19,.4);
+}
+.blog .blog-item:hover .blog-item__info .title{
+    color: #ff545a;
 }
 .blog-item__img img{
     width: 100%;
@@ -839,4 +847,53 @@ p {
 }
 .blog .blog-comment p{
     width: 304px;
+}
+
+
+/* contact section styles */
+.contact{
+    background: #f8fafb;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.contact .contact-input{
+    max-width: 630px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 52px;
+}
+.contact .contact-input input{
+    width: 630px;
+    height: 60px;
+    border: 1px solid #fff;
+    box-shadow: 0 0px 10px rgba(21,19,19,.1);
+    border-radius: 3px;
+    font-size: 16px;
+    padding-left: 30px;
+}
+.contact .contact-input input::placeholder{
+    text-transform: none;
+}
+.contact .contact-input a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff545a;
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    overflow: hidden;
+    cursor: pointer;
 }
